@@ -1,0 +1,133 @@
+*{
+    color: rgb(36, 12, 102);
+   }
+
+   h1 {
+    border: 2px solid black;
+    background: burlywood;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #6a7294;
+    justify-content: center;
+}
+ul.a {
+    list-style-type: circle;
+    }
+  
+ul.b {
+    list-style-type: square;
+     }
+  p {
+    color: rgba(1, 19, 34, 0.5);
+ }
+ h2 {
+    border: 2px ridge black;
+    background: burlywood;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #6a7294;
+    justify-content: center;
+    }
+h6 {
+    color: #6a7294;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    perspective: 90rem;
+    perspective-origin: 30% 60%;
+}
+.div-transform {
+    display: flex;
+    transform: rotateX(10deg) rotateY(15deg) rotateZ(-9deg) scale3d(1,1,-0.9) scale(1.1) translateX(50px);
+}
+.card {
+    background: burlywood;
+    color: aqua;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    width: 300px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    transform: translate(0);
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.card h3 {
+    text-transform: capitalize;
+    }
+.card-1 {
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}
+.card-1:hover {
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px magenta;
+}
+.card-1::before {
+    background: linear-gradient(90deg, magenta, blue 100%);
+}
+.card-2 {
+    background-size: cover;
+    transform: scale(1.01);
+    margin-right: 30px;
+}
+.card-2:hover {
+    transform: scale(1.1);
+    box-shadow: -7px 4px 28px -3px rgb(201, 147, 201);
+}
+.card-2::before {
+    background: linear-gradient(90deg, rgb(189, 170, 189), rgb(255, 0, 242) 100%);
+}
+.card-3 {
+    background-size: cover;
+}
+.card-3:hover {
+    transform: scale(1.08);
+    box-shadow: -7px 4px 28px -3px rgb(190, 219, 84);
+}
+.card-3::before {
+    background: linear-gradient(90deg, rgb(237, 240, 67), rgb(123, 202, 99) 100%);
+}
+.table-responsive {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+section{
+   text-align: center;
+}
+#heart{
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: beat .25s infinite alternate;
+    transform-origin: center;
+}
+@keyframes beat {
+    to { transform: scale(1.4);}
+}
+.contar{
+    font-size: 5rem;
+    
+}
